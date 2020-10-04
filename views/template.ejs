@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>page</title>
+</head>
+<body>
+    <h1 class='title'>send information to server</h1>
+    <form action="/load" class="text-form" method="POST">
+        <div class="box">
+            <label class="text-label" for="text">Title</label>
+            <input type="text" name="name">
+        </div>
+        <div class="box">
+            <label class="text-label" for="paragraph">Content</label>
+            <textarea name="paragraph" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">send</button>
+    </form>
+    <form action="/upload" class='upload-form' method="POST" enctype="multipart/form-data">
+        <input type="file" class="upload-file" name="myFile">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
